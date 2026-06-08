@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>La roue des noms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="title">La roue des noms</span>
+    </div>
+    <div class="header-actions">
+      <div class="theme-menu">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Choisir un thème" aria-controls="theme-panel" aria-expanded="false" title="Choisir un thème">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div id="theme-panel" class="theme-panel hidden">
+          <nav class="theme-list" aria-label="Liste des thèmes">
+            <button class="theme-option" type="button" data-theme="dark-nord">Dark Nord</button>
+            <button class="theme-option" type="button" data-theme="dark-one">Dark One</button>
+            <button class="theme-option" type="button" data-theme="dark-monokai">Dark Monokai</button>
+            <button class="theme-option" type="button" data-theme="dark-ayu">Dark Ayu</button>
+            <button class="theme-option" type="button" data-theme="light-nord">Light Nord</button>
+            <button class="theme-option" type="button" data-theme="light-rose-pine">Light Rose Pine</button>
+            <button class="theme-option" type="button" data-theme="light-sepia">Light Sepia</button>
+            <button class="theme-option" type="button" data-theme="light-aurora">Light Aurora</button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="wheel-layout" class="wheel-layout">
+      <div class="wheel-container">
+        <canvas id="wheel"></canvas>
+      </div>
+      <aside class="result-panel" aria-live="polite">
+        <button id="spin">Lancer la roue</button>
+        <div id="winner" class="hidden"></div>
+      </aside>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
