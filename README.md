@@ -2,11 +2,21 @@
 
 Une mini application web statique pour lancer une roue tirant au hasard un nom parmi une liste prédéfinie : fichier `noms.txt`.
 
+![Aperçu de la roue](screenshot.png)
+
 ## Notes
 
 - Le tirage ne répète pas un nom tant qu'il n'a pas atteint la moitié de l'effectif.
 - Quand cette moitié est atteinte, la mémoire des noms déjà tirés est réinitialisée automatiquement.
 - Le sélecteur de thème propose plusieurs thèmes sombres et clairs.
+
+## Développement assisté par IA
+
+Ce projet a été développé avec l’assistance d’outils d’intelligence artificielle (notamment GitHub Copilot).
+
+L’ensemble du code a fait l’objet d’une relecture, de validations et, le cas échéant, d’adaptations par un humain afin de garantir sa cohérence et sa qualité.
+
+Toutefois, aucune garantie n’est apportée quant à l’originalité complète du code ni à l’absence éventuelle d’éléments provenant de sources tierces. 
 
 ## Utilisation
 
